@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("https://i.pinimg.com/236x/6e/ac/23/6eac2301b2fda27ee01837f7b601afb6.jpg");
+}
+
+.main-header {
+  width: 100%;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.379);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 42px;
+  position: fixed;
+}
+.main-header img {
+  width: 120px;
+}
+.main-header ul {
+  display: flex;
+  gap: 24px;
+}
+.main-header ul a {
+  color: rgba(199, 18, 18, 0.702);
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: 0.4s ease-in-out;
+}
+.main-header ul a:hover {
+  opacity: 1;
+}
+
+.main-content .home {
+  height: 100vh;
+  background-color: rgb(26, 25, 25);
+  background-image: url("https://i.pinimg.com/originals/15/d6/86/15d6864217df3708f3eae49283d7a8d7.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-blend-mode: overlay;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-content .home img {
+  width: 400px;
+}
+.main-content .home p {
+  font-size: 20px;
+  opacity: 0.6;
+  font-weight: 200;
+}
+.main-content .home a button {
+  color: rgba(255, 255, 255, 0.615);
+  letter-spacing: 2px;
+  background-color: rgba(245, 203, 131, 0.4431372549);
+  width: 200px;
+  padding: 12px;
+  border: none;
+  margin-top: 24px;
+  border-radius: 12px;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.main-content .home a button:hover {
+  color: rgba(255, 255, 255, 0.895);
+  transform: scale(1.05);
+  background-color: rgba(245, 131, 131, 0.702);
+}
+.main-content .curiosidades {
+  background-color: rgba(20, 20, 20, 0.897);
+  display: flex;
+  justify-content: center;
+  gap: 62px;
+  padding: 72px 0;
+  min-height: 100vh;
+  align-items: center;
+}
+.main-content .curiosidades div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-left: 12px;
+}
+.main-content .curiosidades div h1 {
+  color: rgba(199, 18, 18, 0.702);
+  font-size: 60px;
+  font-weight: 900;
+}
+.main-content .curiosidades div p {
+  opacity: 0.4;
+  width: 400px;
+  font-weight: 100;
+  line-height: 22px;  
+}
+.main-content .curiosidades iframe {
+  height: 400px;
+  width: 100%;
+  box-shadow: 10px 10px rgba(245, 203, 131, 0.0745098039);
+  transition: 0.6s;
+}
+
+.curiosidades iframe:hover {
+  transform: scale(1.05);
+  box-shadow: 20px 20px rgba(245, 203, 131, 0.0196078431);
+}
+
+div .cards {
+  
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;  
+  background-color: rgba(20, 20, 20, 0.897);
+}
+
+
+.cards div {
+  margin-left: 15px;
+  border-radius: 3px;
+}
+
+.cards img {
+  width: 360px;
+  height: 450px;
+  padding: 0 20px;
+  object-fit: cover;
+}
+
+.cards p {
+  opacity: 0.4;
+    width: 400px;
+    font-weight: 100;
+    line-height: 22px;
+}
+
+.contato {
+  background-color: rgba(20, 20, 20, 0.897);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.contato form {
+  width: 100%;
+  max-width: 600px;
+  background-color: rgb(0 0 0 / 60%);
+  padding: 42px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contato form h1 {
+  margin-bottom: 24px;
+}
+
+.contato form div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contato form input {
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 12px;
+}
+
+.contato form .button-success {
+  background-color: rgb(216, 3, 3);
+  border: none;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.contato form .button-success:hover {
+  background-color: rgb(199, 40, 40);
+  transform: scale(1.05);
+}
+
+.contato form select {
+  background-color: rgb(99, 102, 152);
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+}
+
+.contato form section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contato form section div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input {
+  background-color: rgb(251 246 246);
+  border: none;
+}
+
+input:valid, .contato form select:valid {
+  background-color: rgb(99, 152, 119);
+}
+
+input:disabled {
+  cursor: not-allowed;
+  background-color: rgb(120, 122, 150);
+}
+
+footer a img{
+
+  width: 50px;
+  height: 13px;
+
+}
+
+
+footer{  
+  
+  background-color: rgba(20, 20, 20, 0.897);
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+footer section {
+  
+  justify-content: space-between;
+}
+
+footer h1{
+
+  color: rgba(199, 18, 18, 0.702);
+
+}
+
+footer div{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+@media (max-widht) {
+  * {
+    width: 100%;
+	height: auto;
+  }
+}
+@media (max-width: 425px) {
+  section {
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+  }
+}
